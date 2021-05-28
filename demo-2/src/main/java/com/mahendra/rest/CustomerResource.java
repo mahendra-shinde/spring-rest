@@ -11,7 +11,7 @@ import com.mahendra.models.Customer;
 @RequestMapping("/api/customer")
 public class CustomerResource {
 
-	@GetMapping(produces =MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
 	public Customer findCustomer() {
 		Customer customer = new Customer();
 		customer.setFirstName("Mahendra");
